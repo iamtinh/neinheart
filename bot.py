@@ -6,7 +6,8 @@ token = 'NTI5MTQwNDA2NjQyODAyNzE5.DwshGA.sbD1HzSDR_weliLs-Tg2kpmwwU8'
 
 @bot.event
 async def on_ready():
- print('Logged as:'+bot.user.name+' '+bot.user.id)
+ print('Logged as: '+bot.user.name+' '+bot.user.id)
+ print(discord.__version__())
 
 @bot.command(pass_context=True)
 async def ping(ctx):
